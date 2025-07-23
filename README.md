@@ -1,7 +1,7 @@
 # py-humantime
 
 [![PyPI version](https://img.shields.io/pypi/v/py-humantime.svg?style=flat-square)](https://pypi.org/project/py-humantime/)
-[![Build Status](https://github.com/Avishekdevnath/py-humantime/actions/workflows/python-app.yml/badge.svg)](https://github.com/Avishekdevnath/py-humantime/actions)
+[![Build Status](https://github.com/Avishekdevnath/py-humantime/actions/workflows/ci.yml/badge.svg)](https://github.com/Avishekdevnath/py-humantime/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A production-ready Python package and CLI tool to convert between seconds and human-readable time strings.
@@ -16,18 +16,14 @@ A production-ready Python package and CLI tool to convert between seconds and hu
 
 ## Installation
 
-### From PyPI (after release)
 ```bash
 pip install py-humantime
 ```
 
-### From source (local development)
+## Development install
+
 ```bash
-# Clone the repo
-git clone https://github.com/Avishekdevnath/py-humantime.git
-cd py-humantime
-# Install in editable mode
-pip install -e .
+pip install .
 ```
 
 ## CLI Usage
