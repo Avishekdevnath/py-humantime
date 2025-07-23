@@ -1,0 +1,87 @@
+# py-humantime Project Plan & Checklist
+
+## Objective
+- [x] Develop a pure Python package (py-humantime) for converting between seconds and human-readable time, as both CLI and module.
+
+---
+
+## 1. Directory & File Structure
+- [x] Create package directory: `pyhumantime/`
+- [x] Add `__init__.py`
+- [x] Add `core.py` (conversion logic)
+- [x] Add `cli.py` (CLI interface)
+- [x] Add `pyproject.toml` (packaging)
+- [x] Add `README.md` (documentation)
+- [x] Add `tests/` directory for unit and CLI tests
+
+---
+
+## 2. Core Requirements
+- [x] Use pure Python (no external dependencies)
+- [x] Expose API functions:
+  - [x] `seconds_to_human(seconds: int) -> str`
+  - [x] `human_to_seconds(human_time: str) -> int`
+- [x] Implement CLI options:
+  - [x] `--to-human <seconds>`
+  - [x] `--to-seconds "<string>"`
+- [x] Input validation and clear error messages
+- [x] Ensure code is easily extendable
+- [x] Write clean, readable, and well-documented code
+
+---
+
+## 3. Implementation Steps
+### Core Logic (core.py)
+- [x] Implement `seconds_to_human`
+- [x] Implement `human_to_seconds`
+- [x] Use regex for parsing
+- [x] Add robust error handling and validation
+- [x] Write docstrings and type hints
+
+### CLI Interface (cli.py)
+- [x] Use argparse for argument parsing
+- [x] Support mutually exclusive options
+- [x] Import and use core logic
+- [x] Handle errors gracefully (stderr, exit code)
+
+### Package Initialization (__init__.py)
+- [x] Expose core functions at package level
+
+### Packaging (pyproject.toml)
+- [x] Define project metadata
+- [x] Set dependencies and Python version
+- [x] Add CLI entry point
+
+### Documentation (README.md)
+- [x] Describe usage (CLI and Python)
+- [x] Provide installation instructions
+- [x] Add examples
+
+### Testing (tests/)
+- [x] Unit tests for core logic
+- [x] CLI tests
+- [ ] Ensure high code coverage
+
+---
+
+## 4. Extensibility Considerations
+- [ ] Design logic for easy addition of new units (e.g., ms, days)
+- [ ] Keep parsing/formatting modular
+- [ ] Document extension points
+
+---
+
+## 5. Quality & Release
+- [x] Lint code (PEP8)
+- [x] Add type hints
+- [x] Ensure clear error messages
+- [x] Tag initial release v0.1.0
+- [ ] (Optional) Set up CI (GitHub Actions)
+
+---
+
+## 6. Deliverables
+- [x] Complete, installable package
+- [x] Well-documented codebase
+- [x] Tests with high coverage
+- [x] Ready for PyPI and GitHub 
